@@ -1,20 +1,32 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react'
+//import { ContadorScreen } from './src/screens/ContadorScreen';
+//import BoxObjectModelScreen from './src/screens/BoxObjectModelScreen';
+import { SafeAreaView } from 'react-native';
+//import { DimensionsScreen } from './src/screens/DimensionsScreen';
+//import PositionRelativeScreen from './src/screens/PositionRelativeScreen';
+//import prueba from './src/screens/prueba';
+//import HomeMundoScreen from './src/screens/HomeMundoScreen';
+//import PositionAbsoluteScreen from './src/screens/PositionAbsoluteScreen';
+import FlexScreen from './src/screens/FlexScreen';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+const App = () => {
+   return (
+      <SafeAreaView style={{ flex: 1 }}>
+         {/* <BoxObjectModelScreen/> */}
+         {/* <DimensionsScreen/> */}
+
+         {/* /* <PositionRelativeScreen />  */}
+         {/* <HomeMundoScreen/> */}
+         {/* <prueba/> */}
+         {/* <PositionAbsoluteScreen/> */}
+         <FlexScreen/>
+      </SafeAreaView>
+
+
+   )
+
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
+export default App
+
